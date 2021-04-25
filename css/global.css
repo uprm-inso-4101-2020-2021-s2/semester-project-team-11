@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --back-color: #DCE0EB;
+    --main-color: #F4F5F7;
+    --blue-color: #0053D3;
+    --svg-size: 10%;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.background-back{
+    position: relative;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--back-color);
+}
+
+.main {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+    z-index: 2;
+    border-radius: 15px;
+    overflow: hidden;
+    filter: blur(4px);
+    box-shadow: -5px 55px 96px -41px rgb(0 0 0 / 67%);
+    -webkit-box-shadow: -5px 55px 96px -41px rgb(0 0 0 / 67%);
+    -moz-box-shadow: -5px 55px 96px -41px rgb(0 0 0 / 67%);
+}
+
+.main-menu {
+    position: relative;
+    background-color: white;
+    height: 100%;
+    width: 350px;
+}
+
+.upr-icon {
+    padding: 20px 40px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.upr-icon.close{
+    justify-content: space-between;
+}
+
+.upr-icon.close svg{
+    height: 30px;
+    width: 30px !important;
+}
+
+.upr-icon img {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+
+.list-format {
+    list-style: none;
+}
+
+.list-format svg{
+    height: var(--svg-size);
+    width: var(--svg-size) !important;
+    margin-right: 20px;
+}
+
+.list-format li{
+    display: flex;
+    font-size: 1vh;
+    padding: 20px 0;
+    cursor: pointer;
+    border-right: 3px solid white;
+    transition: border-right .3s ease-in-out;
+    align-items: center;
+}
+
+.list-format li:hover{
+    border-right: 3px solid var(--blue-color);
+    color: gray;
+}
+
+
+.main-right {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.filters-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 80px;
+}
+
+.filters-container button {
+    background: transparent;
+    background-color: var(--blue-color);
+    color: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#side-button-enrollment {
+    background-color: #568f4e;
+}
+
+.filters-container select {
+    background: transparent;
+    background-color: white;
+    color: black;
+    border: none;
+    width: 320px;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    
+}
+
+.semester-container {
+    position: relative;
+}
+
+.semester-container img {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+    transform: rotate(180deg);
+}
+
+.semester-dropdown {
+    margin-right: 20px;
+}
+
+.search-bar {
+    margin-right: 20px;
+}
+
+.search-bar input {
+    background-color: white;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.search-bar input:focus{ outline: none; }
+
+
+/* From here on out its all for the curriculum side menu */
+
+.side-menu-hidden {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 35px -11px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 0px 1px 35px -11px rgba(0,0,0,0.67);
+    -moz-box-shadow: 0px 1px 35px -11px rgba(0,0,0,0.67);
+    transform: translateX(110%);
+    transition: transform .5s ease-in-out;
+    z-index: 3;
+}
+
+.side-menu-hidden.open {
+    transform: translateX(0);
+}
+
+#close-button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: none;
+}
+
+.curriculum-scrolling-device {
+    height: calc(100% - 184px);
+    position: relative;
+    display: block;
+    overflow: auto;
+}
+
+.curriculum-table {
+    position: relative;
+    width:100%;
+    table-layout: fixed;
+    white-space: nowrap;
+    border: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.curriculum-table tr {
+    height: 60px;
+}
+
+.curriculum-table-body  {
+    table-layout: fixed;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.curriculum-table-body tr {
+    height: 60px;
+    width: 100%;
+}
+
+.curriculum-table > thead, .enrollment-table-body  tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+    background-color: white;
+}
+
+.curriculum-table-body td {
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: center;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.cur-col-sem, .curriculum-table-body td:nth-child(1){
+    width: 15%;
+}
+.cur-col-code, .curriculum-table-body td:nth-child(2){
+    width: 15%;
+}
+.cur-col-course, .curriculum-table-body td:nth-child(3){
+    width: 30%;
+}
+.cur-col-pre, .curriculum-table-body td:nth-child(4){
+    width: 15%;
+}
+.cur-col-core, .curriculum-table-body td:nth-child(5){
+    width: 15%;
+}
+.cur-col-taken, .curriculum-table-body td:nth-child(6){
+    width: 10%;
+}
+
+
+/* From this point on its the formatting for the Enrollment Hidden Menu */
+.hidden-enrollment-view {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 35px -11px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 0px 1px 35px -11px rgba(0,0,0,0.67);
+    -moz-box-shadow: 0px 1px 35px -11px rgba(0,0,0,0.67);
+    transform: translateX(110%);
+    transition: transform .5s ease-in-out;
+    z-index: 3;
+}
+
+.hidden-enrollment-view.open {
+    transform: translateX(0);
+}
+
+#enrollment-close-button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: none;
+}
+
+.enrollment-hidden-table {
+    position: relative;
+    width:100%;
+    table-layout: fixed;
+    white-space: nowrap;
+    border: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.enrollment-hidden-table tr {
+    height: 60px;
+}
+
+.hidden-enrollment-table-body  {
+    table-layout: fixed;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.hidden-enrollment-table-body tr {
+    height: 60px;
+    width: 100%;
+}
+
+.hidden-enrollment-table-body td {
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: center;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.enrollment-hidden-table > thead, .enrollment-table-body  tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+    background-color: white;
+}
+
+.enr-col-dem, .hidden-enrollment-table-body td:nth-child(1){
+    width: 15%;
+}
+.enr-col-code, .hidden-enrollment-table-body td:nth-child(2){
+    width: 15%;
+}
+.enr-col-desc, .hidden-enrollment-table-body td:nth-child(3){
+    width: 55%;
+}
+.enr-col-term, .hidden-enrollment-table-body td:nth-child(4){
+    width: 15%;
+}
