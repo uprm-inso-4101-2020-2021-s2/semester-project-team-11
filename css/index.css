@@ -1,0 +1,88 @@
+.table-padding {
+    position: relative;
+    display: block;
+    padding: 0px 30px;
+    height: calc(100% - 200px);
+    box-sizing: border-box;
+}
+
+.enrollment-table {
+    position: relative;
+    width:100%;
+    table-layout: fixed;
+    white-space: nowrap;
+    border: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.enrollment-table tr {
+    height: 60px;
+}
+
+.scrolling-device{
+    height: 100%;
+    overflow: auto;
+    margin-top: 8px;
+}
+
+.enrollment-table-body  {
+    width: 100%;
+    table-layout: fixed;
+    position: relative;
+    overflow:hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.enrollment-table-body tr {
+    height: 60px;
+}
+
+.enrollment-table > thead, .enrollment-table-body  tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+    background-color: white;
+}
+
+
+.enrollment-table-body td {
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: center;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+  
+
+/* Column widths are based on these cells */
+
+.col-no, .enrollment-table-body td:nth-child(1){
+    width: 10%;
+}
+
+.col-course, .enrollment-table-body td:nth-child(2){
+    width: 10%;
+}
+.col-description, .enrollment-table-body td:nth-child(3){
+    width: 40%;
+}
+.col-pre, .enrollment-table-body td:nth-child(4){
+    width: 10%;
+}
+.col-co, .enrollment-table-body td:nth-child(5){
+    width: 10%;
+}
+.col-met, .enrollment-table-body td:nth-child(6){
+    width: 10%;
+}
+.col-met, .enrollment-table-body td:nth-child(7){
+    width: 10%;
+}
+.row-header {
+    border-bottom: 2px solid var(--main-color);
+}

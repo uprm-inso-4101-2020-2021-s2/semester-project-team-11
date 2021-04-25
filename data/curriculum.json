@@ -1,0 +1,402 @@
+{
+    "MATE": {
+        "courses": [
+            {
+                "coursename": "MATE3020",
+                "met": false
+            },
+            {
+                "coursename": "MATE3030",
+                "met": false
+            }
+        ]
+    },
+    "INSO": {
+        "courses": [
+            "wekjbj",
+            "sldkfnsd"
+        ]
+    },
+    "CIIC": {
+        "courses": [
+            {
+                "ID": "MATE3031",
+                "term": {
+                    "year": 1,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "QUIM3131",
+                "term": {
+                    "year": 1,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "QUIM3133",
+                "term": {
+                    "year": 1,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "INGL",
+                "term": {
+                    "year": 1,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "ESPA3101",
+                "term": {
+                    "year": 1,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "CIIC3011",
+                "term": {
+                    "year": 1,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "MATE3032",
+                "term": {
+                    "year": 1,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "QUIM3132",
+                "term": {
+                    "year": 1,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "QUIM3134",
+                "term": {
+                    "year": 1,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "INGL",
+                "term": {
+                    "year": 1,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "ESPA3102",
+                "term": {
+                    "year": 1,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "CIIC4010",
+                "term": {
+                    "year": 1,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "MATE3063",
+                "term": {
+                    "year": 2,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "FISI3171",
+                "term": {
+                    "year": 2,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "FISI3173",
+                "term": {
+                    "year": 2,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "INGE3011",
+                "term": {
+                    "year": 2,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "CIIC3075",
+                "term": {
+                    "year": 2,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "INGL",
+                "term": {
+                    "year": 2,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "CIIC4020",
+                "term": {
+                    "year": 2,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "FISI3172",
+                "term": {
+                    "year": 2,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "FISI3174",
+                "term": {
+                    "year": 2,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "INEL3105",
+                "term": {
+                    "year": 2,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "INEL4115",
+                "term": {
+                    "year": 2,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "INGL",
+                "term": {
+                    "year": 2,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "INSO4101",
+                "term": {
+                    "year": 3,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "CIIC3081",
+                "term": {
+                    "year": 3,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "MATE4145",
+                "term": {
+                    "year": 3,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "INGE3035",
+                "term": {
+                    "year": 3,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "SOCH",
+                "term": {
+                    "year": 3,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "CIIC4025",
+                "term": {
+                    "year": 3,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "CIIC4082",
+                "term": {
+                    "year": 3,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "INGE3045",
+                "term": {
+                    "year": 3,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "ININ4010",
+                "term": {
+                    "year": 3,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "SOCH",
+                "term": {
+                    "year": 3,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "CIIC4050",
+                "term": {
+                    "year": 4,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "CIIC4030",
+                "term": {
+                    "year": 4,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "CIIC5045",
+                "term": {
+                    "year": 4,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "ININ4015",
+                "term": {
+                    "year": 4,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "SOCH",
+                "term": {
+                    "year": 4,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "CIIC4060",
+                "term": {
+                    "year": 4,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "CIIC4070",
+                "term": {
+                    "year": 4,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "INME4045",
+                "term": {
+                    "year": 4,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "SOCH",
+                "term": {
+                    "year": 4,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "TEEL",
+                "term": {
+                    "year": 4,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "CAPS",
+                "term": {
+                    "year": 5,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "TEEL",
+                "term": {
+                    "year": 5,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "FREL",
+                "term": {
+                    "year": 5,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "FREL",
+                "term": {
+                    "year": 5,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "EDFI",
+                "term": {
+                    "year": 5,
+                    "semester": 1
+                }
+            },
+            {
+                "ID": "TEEL",
+                "term": {
+                    "year": 5,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "TEEL",
+                "term": {
+                    "year": 5,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "FREL",
+                "term": {
+                    "year": 5,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "FREL",
+                "term": {
+                    "year": 5,
+                    "semester": 2
+                }
+            },
+            {
+                "ID": "EDFI",
+                "term": {
+                    "year": 5,
+                    "semester": 2
+                }
+            } 
+        ]
+    }
+}

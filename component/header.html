@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="UPRM icon" type="image/png" href="https://www.uprm.edu/uprmcaep/wp-content/uploads/sites/88/2016/11/logo-uprm.png"/>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>UPR Matricula</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</head>
+<body>
+
+<!-- Login -->
+<div class="dark-overlay-upr" id="main-login-container">
+    <div class="upr-login">
+        <form class="upr-login-form" id="upr-form-auth">
+            <div class="imgcontainer">
+                <img src="https://www.uprm.edu/uprmcaep/wp-content/uploads/sites/88/2016/11/logo-uprm.png" alt="UPRM-Icon" class="avatar">
+            </div>
+    
+            <div class="uprm-login-container">
+                <label for="uname"><b>Username</b></label>
+                <input class="upr-login-username" type="text" placeholder="Enter Username" name="uname" required>
+    
+                <label for="psw"><b>Password</b></label>
+                <input class="upr-login-password" type="password" placeholder="Enter Password" name="psw" required>
+    
+                <button class="upr-login-button" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--  End Login -->
+
+<div class="background-back">
+
+<div class="main" id="main-page">
+    <div class="main-menu">
+            <div class="upr-icon">
+                <img src="https://www.uprm.edu/uprmcaep/wp-content/uploads/sites/88/2016/11/logo-uprm.png" alt="icon-uprm" />
+                <div>UPR Matricula</div>
+            </div>
+            <!-- The lines below are for the list in the side menu -->
+            <ul class="list-format">
+                <li> <i class="fas fa-user-circle"></i> <span>My Profile</span>
+                </li>
+                <li> <i class="fas fa-file-alt"></i> <span>Files</span> 
+                </li>
+                <li> <i class="fas fa-terminal"></i> <span>My Programs</span>
+                </li>
+                <li> <i class="fas fa-envelope"></i> <span>Gmail</span>
+                </li>
+                <li> <i class="fab fa-google"></i> <span>Google Apps</span>
+                </li>
+                <li> <i class="fas fa-calendar-alt"></i> <span>Calendar</span>
+                </li>
+                <li> <i class="fas fa-comments"></i> <span>Forums</span>
+                </li>
+                <li> <i class="fas fa-users"></i> <span>Groups</span>
+                </li>
+                <li> <i class="fas fa-bell"></i> <span>Notifications</span>
+                </li>
+                <li> <i class="fas fa-university"></i> <span>Faculty</span>
+                </li>
+                <li> <i class="fas fa-user-graduate"></i> <span>Services for Students</span>
+                </li>
+                <li> <i class="fas fa-cog"></i> <span>Settings</span>
+                </li>
+                <li> <i class="fas fa-info-circle"></i> <span>About</span>
+                </li>
+            </ul>
+    </div>
+    <div class="main-right">
+        <div class="filters-container">
+            <div class="semester-container">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.jFRSdFKLTEN4-5hYqoQ2QQAAAA%26pid%3DApi&f=1">
+                <select class="semester-dropdown" id="semester-dropdown">
+                    <option value="Spring">Spring Semester</option>
+                    <option value="Fall">Fall Semester</option>
+                    <option value="Short Summer">Short Summer</option>
+                    <option value="Long Summer">Long Summer</option>
+                </select>
+            </div>
+
+            <div class="search-bar"><input id="search-course-input" type="text" placeholder="Search course..."></div>
+            
+            <button id="side-button-curriculum">My Curriculum</button>
+            <button id="side-button-enrollment">Enrollment</button>
+        </div>
+
+        <div class="side-menu-hidden">
+            <div class="upr-icon close">
+                <img src="https://www.uprm.edu/uprmcaep/wp-content/uploads/sites/88/2016/11/logo-uprm.png" alt="icon-uprm" />
+                <div> <b>UPR Matricula </b></div>
+                <button id="close-button">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <table class="curriculum-table" cellpadding="0" cellspacing="0">
+                <thead>
+                  <tr class="row-header">
+                    <th class="cur-col-sem"> Semester </th>
+                    <th class="cur-col-code"> Course </th>
+                    <th class="cur-col-course"> Description </th>
+                    <th class="cur-col-pre"> Pre-requisite </th>
+                    <th class="cur-col-core"> Co-requisite </th>
+                    <th class="cur-col-taken"> Approved</th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="curriculum-scrolling-device">
+                <table class="curriculum-table-body" cellpadding="0" cellspacing="0">
+                  <tbody id="curriculum-tbody">
+                  </tbody>
+                </table>
+              </div>
+        </div>
+
+
+        <div class="hidden-enrollment-view">
+            <div class="enrollment upr-icon close">
+                <img src="https://www.uprm.edu/uprmcaep/wp-content/uploads/sites/88/2016/11/logo-uprm.png" alt="icon-uprm" />
+                <div> <b>Enrollment </b></div>
+                <button id="enrollment-close-button">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        
+            <table class="enrollment-hidden-table" cellpadding="0" cellspacing="0">
+                <thead>
+                  <tr class="enrollment-view-row-header">
+                    <th class="enr-col-dem"> Demand </th>
+                    <th class="enr-col-code"> Code </th>
+                    <th class="enr-col-desc"> Description </th>
+                    <th class="enr-col-term"> Term </th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="hidden-enrollment-scrolling-device">
+                <table class="hidden-enrollment-table-body" cellpadding="0" cellspacing="0">
+                  <tbody id="hidden-enrollment-tbody">
+                  </tbody>
+                </table>
+              </div>
+        </div>
+        
+       
+

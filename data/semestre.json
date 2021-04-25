@@ -1,0 +1,11 @@
+{
+    "FALL2021": {
+        "courses": ["course_id","course_id"]
+    },
+    "SUM2021" : {
+        "courses": ["course_id","course_id"]
+    },
+    "SPRING2021" :{
+        "courses": ["course_id","course_id"]
+    }
+}
