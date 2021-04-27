@@ -204,7 +204,7 @@ class bcolors:
     RESET = '\033[0m' #RESET COLOR
 
 # Set server settings
-host = '10.0.0.8'
+host = '10.0.0.85'
 port = 3000
 
 # Set terminal message for developer

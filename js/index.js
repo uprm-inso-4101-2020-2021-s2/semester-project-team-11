@@ -114,6 +114,7 @@ function isRequirementMet (item){
     })
     return taken;
 }
+
 function transformToTableRows(data) {
     var result = tranformToObject(data);
     let rows = "";
